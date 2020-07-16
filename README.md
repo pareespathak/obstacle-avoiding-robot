@@ -2,7 +2,12 @@
 user must run the code along with the android application which will enable to operate the vehicle from cell phone to change the modes .
 the application used here send the text from the cellphone to arduino uno by bluetooth module.
 the application can be worked only on andoid phones, ios user can use other ways of sending text that enables the function .
-
+programming changes can be made using arduino ide software.
+//=================================ABOUT THE BOT============================
+Bot can be used as remote control car using mobile .
+obstacle avoider feature is for automatic diven non go to goal mode .
+line following and obstacle avoider mode cannot be used at a time. 
+they can be used simulteniously according to requirment.
 //========================== Hardware components used====================================
 1. arduino uno
 2. bluetooth module Hc-05
@@ -19,6 +24,18 @@ application contains other features like
 1. line follower mode.
 2. slow motion mode 
 which can be used by adding hardware components like IR proximity sensors .
+//============================= libraries included=============================
+1. servo.h // to run the servo motor .
+2. motor shield library (optionl if using any shield)
+3. newping .h (optional for calculating distances)
 //=========================== pins declaration of arduino =============================
+m1,m2     == right motor ,
+m3,m4     == left motor,
+trig,echo == pins of ultarsonic sensor,
+head      == servo motor,
 
-
+line following mode can be included at text '6' recieved by bluetooth module.
+//========================= about obstacle avoider====================
+functon are set according to the distance range calculated by the ultrasonic sensor.
+if there is noise and random false values is detected by the sensor , reset the mode by clicking obstacle avoider mode on the application. 
+//===============================end===============================
