@@ -1,5 +1,5 @@
-# mobile rover with obstacle avoider obstacle-avoider-
-user must run the code along with the android application which will enable to operate the vehicle from cell phone to change the modes .
+mobile rover with obstacle avoider obstacle-avoider-
+user must run the code along with the android application which will enable to operate the vehicle from cell phone to change the modes.
 the application used here send the text from the cellphone to arduino uno by bluetooth module.
 the application can be worked only on andoid phones, ios user can use other ways of sending text that enables the function .
 programming changes can be made using arduino ide software.
@@ -8,6 +8,7 @@ Bot can be used as remote control car using mobile .
 obstacle avoider feature is for automatic diven non go to goal mode .
 line following and obstacle avoider mode cannot be used at a time. 
 they can be used simulteniously according to requirment.
+Delay can be adjusted according to the power of motors and  surface of environment where the  bot is used.
 //========================== Hardware components used====================================
 1. arduino uno
 2. bluetooth module Hc-05
