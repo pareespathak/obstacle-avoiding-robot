@@ -4,7 +4,8 @@ the application used here send the text from the cellphone to arduino uno by blu
 the application can be worked only on andoid phones, ios user can use other ways of sending text that enables the function .
 programming changes can be made using arduino ide software.
 Display of application 
-![WhatsApp Image 2020-08-27 at 14 48 32](https://user-images.githubusercontent.com/64767345/91436561-674ce180-e879-11ea-8840-33b235e26379.jpeg)
+
+![](images/WhatsApp Image 2020-08-27 at 14.48.32.jpeg)
 
 
 ABOUT THE BOT
