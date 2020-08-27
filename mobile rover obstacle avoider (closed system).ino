@@ -171,38 +171,15 @@ void usmode()
   while(dist[1] < 15 && x=='7')
   {
     int count1 = 0,count2 = 0,count3 = 0;
-   /* digitalWrite(m2,LOW);
-    digitalWrite(m1,LOW);
-    digitalWrite(m3,LOW);
-    digitalWrite(m4,LOW);
-    delay(100);*/
-    
-   /* leftdist=readdist(36);
-    Serial.print(leftdist);
-    Serial.println("l dist:");
-    delay(1000);
-    Serial.println("r dist:");
-    Serial.print(rightdist);
-    rightdist=readdist(144);
-    delay(500);
-   if(leftdist > rightdist && leftdist > 5)
-   {
-    moveleft();
-   }
-   */
    if(dist[0] > dist[2] && dist[0] > 2)
    {
     moveleft();
-    //checkdist(dist);
+    checkdist(dist);
    }
-   /*if(rightdist > leftdist)
-   {
-    moveright();
-   }
-   */
    if(dist[2] > dist[0] && dist[2] > 2)
    {
     moveright();
+    checkdist(dist);
    }
    checkdist(dist);
    if(dist[1] <= 4)
